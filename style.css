@@ -10,7 +10,9 @@
 body {
     position: relative;
     width: 100%;
-    background: linear-gradient(68.15deg, #00c6fb 16.62%, #005bea 85.61%);
+    height: 100vh;
+    background-image: linear-gradient(to top, #00c6fb, #00affe, #0097ff, #007bf9, #005bea);
+    background-repeat: no-repeat;
     padding: 40px;
 }
 

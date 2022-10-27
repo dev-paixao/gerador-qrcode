@@ -8,21 +8,20 @@
 }
 
 body {
-    position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, #00c6fb, #00affe, #0097ff, #007bf9, #005bea);
     background-repeat: no-repeat;
     padding: 40px;
-    font-size: 100%;
-
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-
+.cabecalho {
+    border-bottom: solid 2px #fff;
+}
 
 header .top {
     display: flex;
@@ -262,5 +261,125 @@ footer .content .link-boxes{
     }
 }
 
+/*responsividade*/
+
+@media (max-width: 630px) {
+
+    .header-items{
+        display: none;
+    }
+
+    header .top{
+        display: none;
+    }
+
+    .menu-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-responsive{
+        display: flex;
+        width: 10%;
+        max-width: 700px;
+        filter: invert(100%);
+    }
+
+    .button-contacte {
+        margin-top: 2vh;
+    }
+    
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 2px;
+        width: 60%;
+        margin: 5px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+    }
+
+    /*fullscren*/
+
+
+    .logo-responsive.off{
+        opacity: 0%;
+    }
+
+    .home.on{
+        margin-top: 100vh;
+    }
+
+
+    .cabecalho.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho.on .header-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho.on .cabecalho-menu{
+        display: flex;
+        flex-direction: column;
+        line-height: 1rem;
+        text-align: center;
+    }
+
+    .cabecalho-menu-item{
+        font-size: 5vw;
+    }
+
+    .cabecalho.on .menu-toggle{
+        position: absolute;
+        right: -4vw;
+        margin-right: 10vw;
+        top: 3vh;
+    }
+
+    .cabecalho.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .cabecalho.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .cabecalho.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(3px, -4px);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .offer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .offer > div{
+        flex: 1 1 80px;
+      }
+}
 
 

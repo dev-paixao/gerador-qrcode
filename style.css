@@ -44,14 +44,14 @@ body {
 
 
 .wrapper .header h1 {
-    font-size: 3rem;
+    font-size: max(25px, 2.5vw);
     font-weight: 600;
     letter-spacing: -3px;
     margin: 10px 0;
 }
 
 .wrapper .header p {
-    font-size: 1.6rem;
+    font-size: max(15px, 1vw);
     margin-bottom: 5px;
     text-align: center;
 }
@@ -86,8 +86,9 @@ body {
     outline: none;
     border: none;
     border-radius: 5px;
-    color: #eee;
+    color: #fff;
     cursor: pointer;
+    font-size: max(15px, 1vw);
 }
 
 .wrapper .form button:hover{
@@ -107,24 +108,8 @@ body {
     transition: all .5s .5s ease;
 }
 
-
-@media (max-width:700px) {
-    .wrapper .header h1 {
-        font-size: 2.5rem;
-    }
-    .wrapper .header p {
-        font-size: 1.rem;
-    }    
-}
-
 @media (max-width: 530px) {
 
-    .wrapper .header h1 {
-        font-size: 2rem;
-    }
-    .wrapper .header p {
-        font-size: 14px;
-    } 
     .imagem-qrcode{
         width: 70%;
     }

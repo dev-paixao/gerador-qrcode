@@ -151,13 +151,6 @@ html{
     transition: all .5s .5s ease;
 }
 
-@media (max-width: 530px) {
-
-    .imagem-qrcode{
-        width: 70%;
-    }
-}
-
 /*responsividade*/
 
 @media (max-width: 630px) {
@@ -262,6 +255,14 @@ html{
         transform: rotate(-45deg) translate(3px, -4px);
     }
 
+}
+
+
+@media (max-width: 530px) {
+
+    .imagem-qrcode{
+        width: 70%;
+    }
 }
 
 @media (max-width: 480px) {

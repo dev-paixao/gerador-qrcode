@@ -10,13 +10,15 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, #00c6fb, #00affe, #0097ff, #007bf9, #005bea);
-    background-repeat: no-repeat;
-    padding: 40px;
+    background-color: #fffafa;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+.cabecalho{
+    background-color: #0077B5;
 }
 
 .cabecalho-img {

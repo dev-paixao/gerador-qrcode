@@ -199,6 +199,13 @@ html{
         height: 30px;
     }
 
+    .cabecalho .menu-toggle{
+        position: absolute;
+        right: -4vw;
+        margin-right: 10vw;
+        top: 3vh;
+    }
+
     /*fullscren*/
 
 
@@ -258,6 +265,10 @@ html{
 
     .cabecalho.on .menu-toggle .three{
         transform: rotate(-45deg) translate(3px, -4px);
+    }
+
+    .cabecalho.on .cabecalho-img{
+        width: 10%;
     }
 
 }

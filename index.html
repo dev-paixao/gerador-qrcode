@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shoertcut icon" href="img/verificacao-de-codigo-qr.png">
+    <link rel="shoertcut icon" href="img/qr-code.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Gerador de QRCode</title>
@@ -41,24 +41,32 @@
 
         <div class="wrapper">
 
-        <div class="header-form">
-            <div class="header">
-                <h1>Gerador De QR Code</h1>
-                <p>Cole a url desejada</p>
-            </div>
-            <div class="form">
-                <input type="text"  placeholder="Insira a URL" name="" id="inputValue">
-                <button id="btnValue" >Gerar QRcode</button>
-            </div>
-            <div id="qrcode">
-                <img class="imagem-qrcode" src="img/qr-code.png" id="imgQrCode" alt="">
-            </div>
+            <div class="header-form">
+                <div class="header">
+                    <h1>Gerador De QR Code</h1>
+                    <p>Cole a url desejada</p>
+                </div>
+                <div class="form">
+                    <input type="text"  placeholder="Insira a URL" name="" id="inputValue">
+                    <button id="btnValue" >Gerar QRcode</button>
+                </div>
+                <div id="qrcode">
+                    <img class="imagem-qrcode" src="img/qr-code.png" id="imgQrCode" alt="">
+                </div>
 
-        </div>
+            </div>
         </div>
 
     </main>
+
     <footer class="footerbox">
+        <div class="copy">© 2022 <a class="footerbox-menu-item"href="https://github.com/dev-paixao" target="_blank">dev-paixao</a>  - Encurtador de URL</div>
+        <nav class="footer-menu" >
+            <a class="footerbox-menu-item" href="https://dev-paixao.github.io/encurtador-url/" target="_blank">Encurtador</a>
+            <a class="footerbox-menu-item" href="#">Termos de Serviço</a>
+            <a class="footerbox-menu-item" href="#">Privacidade</a>
+            <a class="footerbox-menu-item" href="#">Contato</a>
+        </nav>
     </footer>
     <script src="./script.js"></script>
     <script src="menu.js"></script>

@@ -4,69 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/qr-code.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Gerador de QRCode</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/imc-icon.png" type="image/png">
+
+    <title>Meu IMC</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="header-items">
+    <main id="container">
 
-            <img class="cabecalho-img" src="img/qr-code.png" alt="">
-            <nav class="cabecalho-menu" >
-                <a class="cabecalho-menu-item" href="#home">Home</a>
-                <a class="cabecalho-menu-item" href="#">Termos de Serviço</a>
-                <a class="cabecalho-menu-item" href="#">Privacidade</a>
-                <a class="cabecalho-menu-item" href="#">Contato</a>
-            </nav>
+        <section id="content">
+
+            <form id="form">
+                    <h1 id="title">
+                        Gerador de QRCode
+                    </h1>
+                    <div class="input-box">
+                        <div class="input-field">
+                            <i class="fa-sharp fa-solid fa-qrcode"></i>
+                            <input type="text" placeholder="Insira sua URL ou texto aqui" id="inputValue">
+                        </div>
+                    </div>               
+            </form>
             
-        </div>
-
-        <div class="menu-responsive">
-            <img class="logo-responsive" src="img/qr-code.png" alt="">
-
-            <div class="menu-toggle">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
+            <div class="qrcode-container">
+                <img class="qrcode-image" src="assets/img/qr-code.png" id="imgQrCode" alt="QR Code">
             </div>
-        </div>
-
-    
-    </header>
-
-
-    <main class="conteudo">
-
-        <div class="wrapper">
-
-            <div class="header-form">
-                <div class="header">
-                    <h1>Gerador De QR Code</h1>
-                </div>
-                <div class="form">
-                    <input type="text"  placeholder="Insira a URL" name="" id="inputValue">
-                </div>
-                <div id="qrcode">
-                    <img class="imagem-qrcode" src="img/qr-code.png" id="imgQrCode" alt="">
-                </div>
-
-            </div>
-        </div>
+ 
+        </section>
 
     </main>
 
-    <footer class="footerbox">
-        <nav class="footer-menu" >
-            <a class="footerbox-menu-item" href="#">Home</a>
-            <a class="footerbox-menu-item" href="#">Termos de Serviço</a>
-            <a class="footerbox-menu-item" href="#">Privacidade</a>
-            <a class="footerbox-menu-item" href="#">Contato</a>
-        </nav>
-        <div class="copy">© 2022 <a class="footerbox-menu-item"href="https://github.com/dev-paixao" target="_blank">dev-paixao</a> <p>- Gerador De QR Code</p> </div>
-    </footer>
-    <script src="./script.js"></script>
-    <script src="menu.js"></script>
+    <script src="assets/js/script.js"></script>   
+
 </body>
 </html>

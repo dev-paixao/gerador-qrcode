@@ -1,5 +1,4 @@
 const inputValue = document.querySelector('#inputValue');
-const btnValue = document.querySelector('#btnValue');
 const imgQrCode = document.querySelector('#imgQrCode');
 const wrapper = document.querySelector('.wrapper');
 let valueDefault = '';
@@ -13,24 +12,9 @@ function generateQRCode() {
   }
   
   valueDefault = qrcodeValue;
-  btnValue.innerText = 'Gerando QR Code...';
-  
-  const apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(valueDefault)}`;
-  
-  // Requisição AJAX para a API goqr.me
-  fetch(apiUrl)
-    .then(response => response.blob())
-    .then(blob => {
-      imgQrCode.src = URL.createObjectURL(blob);
-      wrapper.classList.add('active');
-      btnValue.innerText = 'Gerar QRCode';
-    })
-    .catch(error => {
-      console.error('Erro ao gerar o QR Code:', error);
-      btnValue.innerText = 'Gerar QRCode';
-    });
+  imgQrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(valueDefault)}`;
+  wrapper.classList.add('active');
 }
 
-// Evento de clique no botão
-btnValue.addEventListener('click', generateQRCode);
-
+// Evento de digitação no campo de entrada
+inputValue.addEventListener('keyup', generateQRCode);

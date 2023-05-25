@@ -15,7 +15,7 @@ function generateQRCode() {
   }
   
   valueDefault = qrcodeValue;
-  imgQrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(valueDefault)}`;
+  imgQrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(valueDefault)}`;
   qrCodeGenerated = true;
 }
 

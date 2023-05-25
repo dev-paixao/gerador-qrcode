@@ -1,0 +1,41 @@
+<!-- qr-code.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #qrCodeContainer {
+      max-width: 100%;
+      max-height: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    #qrCodeImage {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="qrCodeContainer">
+    <img id="qrCodeImage" src="">
+  </div>
+  
+  <script>
+    // Recupera a imagem do QR code do sessionStorage
+    const qrCodeImage = document.getElementById('qrCodeImage');
+    const qrCodeSrc = sessionStorage.getItem('qrCodeSrc');
+    qrCodeImage.src = qrCodeSrc;
+  </script>
+</body>
+</html>
+
